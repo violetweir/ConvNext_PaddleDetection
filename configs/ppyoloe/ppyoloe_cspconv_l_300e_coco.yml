@@ -2,7 +2,7 @@ _BASE_: [
   '../datasets/coco_detection.yml',
   '../runtime.yml',
   './_base_/optimizer_300e_adamw.yml',
-  './_base_/ppyoloe_cdpconv.yml',
+  './_base_/ppyoloe_cspconv.yml',
   './_base_/ppyoloe_reader.yml',
 ]
 

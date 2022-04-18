@@ -51,3 +51,5 @@ from .hardnet import *
 from .esnet import *
 from .cspresnet import *
 from .csp_darknet import *
+from .cspconvnext import *
+from .convnext import *
