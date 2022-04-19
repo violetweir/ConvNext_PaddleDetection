@@ -10,5 +10,5 @@ log_iter: 100
 snapshot_epoch: 10
 weights: output/ppyoloe_crn_l_300e_coco/model_final
 
-pretrain_weights: ./pre/cspconvconxt.pdparams
+pretrain_weights: ./pre/cspconvnext.pdparams
 
