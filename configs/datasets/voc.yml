@@ -1,19 +1,19 @@
 metric: VOC
 map_type: 11point
-num_classes: 20
+num_classes: 80
 
 TrainDataset:
   !VOCDataSet
-    dataset_dir: dataset/voc
-    anno_path: trainval.txt
-    label_list: label_list.txt
+    dataset_dir: dataset/ship_detect
+    anno_path: train_list.txt
+    label_list: labels.txt
     data_fields: ['image', 'gt_bbox', 'gt_class', 'difficult']
 
 EvalDataset:
   !VOCDataSet
-    dataset_dir: dataset/voc
-    anno_path: test.txt
-    label_list: label_list.txt
+    dataset_dir: dataset/ship_detect
+    anno_path: val_list.txt
+    label_list: labels.txt
     data_fields: ['image', 'gt_bbox', 'gt_class', 'difficult']
 
 TestDataset:

@@ -143,9 +143,12 @@ def save_result(save_path, results, catid2name, threshold):
                 # each bbox result as a line
                 # for rbox: classname score x1 y1 x2 y2 x3 y3 x4 y4
                 # for bbox: classname score x1 y1 w h
+                # bbox_pred = '{} {} '.format(catid2name[catid],
+                #                             score) + ' '.join(
+                #                                 [str(e) for e in bbox])
                 bbox_pred = '{} {} '.format(catid2name[catid],
                                             score) + ' '.join(
-                                                [str(e) for e in bbox])
+                                                [str(bbox[0]), str(bbox[1]), str(bbox[0]+bbox[2]), str(bbox[1]+ bbox[3])])
                 f.write(bbox_pred + '\n')
         elif "keypoint_res" in results:
             for dt in results["keypoint_res"]:

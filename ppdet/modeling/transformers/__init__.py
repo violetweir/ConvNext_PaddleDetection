@@ -1,25 +1,34 @@
-# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-from . import detr_transformer
-from . import utils
-from . import matchers
-from . import position_encoding
-from . import deformable_transformer
-
-from .detr_transformer import *
-from .utils import *
-from .matchers import *
-from .position_encoding import *
-from .deformable_transformer import *
+<?xml version="1.0" encoding="utf-8"?>
+	<annotation>
+		<folder>driving_annotation_dataset</folder>
+		<filename>shoot69_6.jpg</filename>
+		<size>
+			<width>608</width>
+			<height>608</height>
+			<depth>3</depth>
+		</size>
+		<object>
+			<name>shoot</name>
+			<pose>Unspecified</pose>
+			<truncated>0</truncated>
+			<difficult>0</difficult>
+			<bndbox>
+				<xmin>462</xmin>
+				<ymin>44</ymin>
+				<xmax>536</xmax>
+				<ymax>174</ymax>
+			</bndbox>
+		</object>
+		<object>
+			<name>shoot</name>
+			<pose>Unspecified</pose>
+			<truncated>0</truncated>
+			<difficult>0</difficult>
+			<bndbox>
+				<xmin>48</xmin>
+				<ymin>297</ymin>
+				<xmax>95</xmax>
+				<ymax>384</ymax>
+			</bndbox>
+		</object>
+	</annotation>

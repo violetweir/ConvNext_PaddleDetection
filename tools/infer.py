@@ -49,7 +49,7 @@ def parse_args():
     parser.add_argument(
         "--infer_img",
         type=str,
-        default=None,
+        default="demo/000000570688.jpg",
         help="Image path, has higher priority over --infer_dir")
     parser.add_argument(
         "--output_dir",
